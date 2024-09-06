@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn & Wyatt!</title>
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF5EE;
+            margin: 0;
+            color: #FFC0CB;
+        }
+        .container {
+            text-align: center;
+            width: 60%;
+        }
+        .progress-bar-container {
+            width: 100%;
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 30px;
+            background-color: #FFC0CB;
+            width: 0%;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        h2 {
+            margin-bottom: 50px;
+            font-size: 2.5em;
+        }
+        p {
+            margin-bottom: 50px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="images/peony.png" height="251" width="251"/>
+    <h2>I love you so much Autumn!!!</h2>
+    <p>Today's date: <span id="current-date"></span><br>
+    Target date: <span id="target-date"></span></p>
+    <h1>Time until I see you again! ♥</h1>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar">0%</div>
+    </div>
+    <p id="progress-text">0% completed</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
